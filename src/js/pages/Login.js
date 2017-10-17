@@ -34,7 +34,7 @@ export default class Login extends React.Component {
       window.location.href = "/home"
     } else {
       return (
-        <div>
+        <div className="loginDiv">
           <PrimaryButton
             onClick={ () => {
               location.href = "https://github.com/login/oauth/authorize?client_id=cf9c97ea862ef7028aa8&scope=user,repo"
