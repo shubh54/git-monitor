@@ -3,28 +3,32 @@ import {Nav, INavLinkGroup} from 'office-ui-fabric-react/lib/Nav'
 
 const SidebarMenu = ({groups, expanded, collapsed}) => (
   <div className='SidebarMenu'>
-    <Nav groups={groups}
+    <Nav
+      groups={groups}
       expandedStateText={expanded}
-      collapsedStateText={collapsed}
-    />
+      collapsedStateText={collapsed}/>
   </div>
 )
 
 SidebarMenu.props = {
   groups: INavLinkGroup,
   expanded: T.string,
-  collapsed: T.string,
+  collapsed: T.string
 }
 
 SidebarMenu.defaultProps = {
-  groups: [{
-    links: [{
-      name: 'Repos',
-      url: '/home'
-    }]
-  }],
+  groups: [
+    {
+      links: [
+        {
+          name: 'Repos',
+          url: '/home'
+        }
+      ]
+    }
+  ],
   expanded: 'expanded',
-  collapsed: 'collapsed',
+  collapsed: 'collapsed'
 }
 
 export default SidebarMenu

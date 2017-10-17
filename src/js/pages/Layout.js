@@ -1,13 +1,12 @@
 import React from "react";
-import { Link } from "react-router";
+import {Link} from "react-router";
 import Header from "../components/layout/Header";
 import SideBar from "../components/layout/SideBar";
-import Nav from "../components/layout/Nav";
 import Footer from "../components/layout/Footer";
 
 export default class Layout extends React.Component {
   render() {
-    const { location } = this.props;
+    const {location} = this.props;
     const containerStyle = {
       marginTop: "60px"
     };
@@ -16,14 +15,14 @@ export default class Layout extends React.Component {
         <div className="App">
           <div className="header">
             <Header/>
-          </div>        
+          </div>
           <div className="body">
             <div className="content">
               {this.props.children}
             </div>
             <div className="sidebar">
               <SideBar/>
-            </div>      
+            </div>
           </div>
           <div className="footer">
             <Footer/>
