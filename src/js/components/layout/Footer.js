@@ -5,7 +5,8 @@ const Footer = () => (
   <div className="footer-container ms-bgColor-neutralSecondary ms-fontColor-white">
     {'© Git Monitor '}
     {' -- Made with '}
-    <span className="text-red">♥</span>
+    <span className="ms-fontColor-red">♥</span>
+    {' By Shubham Gupta'}
   </div>
 )
 

@@ -59,6 +59,7 @@ take up the entire height of the page
   .App .content {
       width: 100%;
       height: 100%;
+      padding: 0px 0px 0px 15px;
   }
 
   .App .footer-container {

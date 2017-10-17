@@ -36,7 +36,10 @@ export default class Home extends React.Component {
   render() {
     return (
       <div>
-        <DetailsList items={ this.state.repos } columns={ ListColumns } selection={ false }/> 
+        <div className="pageTitle">
+          <h3>User Repositories</h3>
+        </div>
+        <DetailsList className="ms-font-m" items={ this.state.repos } columns={ ListColumns } selection={ false }/> 
       </div>
     );
   }
